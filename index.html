@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>A11yMcBeal - Accueil</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/406da18a0b.js" crossorigin="anonymous" defer=""></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="Main_Acess">
+        <p><a href="#Main">contenu principal</a></p>
+    </section>
+    <header role="banner">
+        <section class="Flex_row_center">
+            <!-- NAVIGATION -->
+            <nav role="navigation" aria-label="menu" class="Flex_box_T">
+                <ol class="menu_header">
+                    <li><a href="quisommesnous.html">Qui sommes-nous ?</a></li>
+                    <li><a href="">Normes</a></li>
+                    <li><a href="#AccordionIncident">Déclarer un litige</a></li>
+                </ol>
+            </nav>
+            <div aria-label="logo A11yMcBeal" class="Flex_box_T" id="Logo">
+                <h1>A11yMcBeal</h1>
+            </div>
+            <div aria-label="Moteur de recherche" class="Flex_row Flex_box_T" id="Recherche">
+                <form action="" name="search">
+                    <input class="" type="search" placeholder="Rechercher...">
+                    <button type="submit" role="button" aria-label="rechercher">
+                        <i class="fas fa-search" aria-hidden="true"></i>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </header>
+
+    <!-- MAIN : HOMEPAGE-->
+    <main role="main" id="Main">
+        <section class="Flex_row">
+            <div class="Flex_box_img">
+                <img src="images/old_lady-1.webp" alt="" />
+            </div>
+            <div class="Flex_box_content">
+                <h2>Toujours à vos côtés</h2>
+                <p>
+                    Nous vous accompagnons dans vos démarches liées à l’accessibilité numérique. Si vous rencontrez des
+                    difficultés pour accéder à un site web ou une application mobile, contactez-nous!
+                </p>
+                <button role="button" onclick="openDialog('dialog1', this)"><a
+                        href="#">Accessibilité numérique ?</a></button>
+            </div>
+        </section>
+        <section>
+            <h2>Qui sommes-nous?</h2>
+            <div class="Flex_row">
+                <div class="card">
+                    <img src="images/devon.png" alt="" />
+                    <h3>Devon Lane</h3>
+                    <q>Neque nulla ultricies ut.</q>
+                </div>
+                <div class="card">
+                    <img src="images/leslie.png" alt="" />
+                    <h3>Leslie Alexander</h3>
+                    <q>Neque nulla ultricies ut.</q>
+                </div>
+                <div class="card">
+                    <img src="images/arlene.png" alt="" />
+                    <h3>Arlene McCoy</h3>
+                    <q>Neque nulla ultricies ut.</q>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- MODAL -->
+    <section>
+        <div role="dialog" id="dialog1" aria-labelledby="dialog1_label" aria-modal="true" class="hidden">
+            <div class="buttonC"><button type="button" onclick="closeDialog(this)">Fermer</button></div>
+            <h2>Accessibilité numérique</h2>
+            <div class="Flex_row_center">
+                <div class="Flex_box_content_inv modal">
+                    <q>En France, les produits et services numériques sont souvent conçus sans prendre le temps de
+                        comprendre l’audience qu’ils servent, notamment les personnes en situation de handicap soit 12
+                        millions de personnes en France.
+
+                        Les services non accessibles sont le fruit de parcours trop complexes et de lignes de code qui
+                        ne
+                        suivent pas les bonnes pratiques de développement web. Il est essentiel que designers &
+                        developers
+                        soient formés à ces enjeux.
+
+                        Depuis 2012, tous les sites publics doivent être accessibles et conformes à l’ensemble des
+                        critères
+                        du RGAA. Et ainsi permettre à tous les usagers un égal accès à leurs droits.</q>
+
+                    <p>Source : <a href="https://design.numerique.gouv.fr/accessibilite-numerique3"
+                            alt="Lien externe vers la source">https://design.numerique.gouv.fr/accessibilite-numerique3</a>
+                    </p>
+
+                </div>
+                <div class="Flex_box_img_modal">
+                    <figure role="figure" aria-label="Répartition des erreurs WCAG les plus fréquentes">
+                        <img src="images/WebAIM_million 1.png"
+                            alt="Histogram of the most common types of WCAG 2 failures" lang="en"
+                            longdesc="https://webaim.org/projects/million/update/#wcag" />
+                        <figcaption>Répartition des erreurs WCAG les plus fréquentes.
+                            Source : <a
+                                href="https://webaim.org/projects/million/update">https://webaim.org/projects/million/update
+                                (anglais)</a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="tableau">
+                <table lang="en-us" role="table">
+                    <caption>% WCAG Failure Type by months</caption>
+                    <thead>
+                        <tr>
+                            <th role="columnheader">WCAG Failure Type</th>
+                            <th role="columnheader">% of home pages in February</th>
+                            <th role="columnheader">% of home pages in August</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th role="rowheader">Lorem ipsum dolor sit amet</th>
+                            <td>85%</td>
+                            <td>43%</td>
+                        </tr>
+                        <tr>
+                            <th role="rowheader">Lorem ipsum dolor sit amet</th>
+                            <td>85%</td>
+                            <td>43%</td>
+                        </tr>
+                        <tr>
+                            <th role="rowheader">Lorem ipsum dolor sit amet</th>
+                            <td>85%</td>
+                            <td>43%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    </div>
+    <!-- FORM -->
+    <section>
+        <div id="AccordionIncident">
+            <button class="Accordion" aria-expanded="false" aria-controls="AccordionIncident" id="buttonT">Déclarer un
+                incident</button>
+            <div class="panel" id="panel">
+                <form class="Flex_column" action="" id="FormIncident" autocomplete="on" aria-hidden="true">
+                    <fieldset role="group">
+                        <legend>Information sur vous</legend>
+                        <div class="Flex_row_form">
+                            <div>
+                                <label for="nom">Nom&nbsp;* :</label>
+                                <input type="text" id="nom" name="nom" required minlength="4" maxlength="20" size="30"
+                                    autocomplete="name">
+                            </div>
+                            <div>
+                                <label for="email">Adresse email&nbsp;* :</label>
+                                <input type="email" id="mail" name="mail" size="30" autocomplete="email" required>
+                            </div>
+                        </div>
+                        <div class="Flex_row_form">
+                            <div>
+                                <labelfor="prenom">Prénom&nbsp;* :</label>
+                                    <input type="text" id="prenom" name="prenom" required minlength="4" maxlength="20"
+                                        size="30">
+                            </div>
+                            <div>
+                                <label for="site">Adresse site&nbsp;* :</label>
+                                <input type="text" id="site" name="site" size="30" required>
+                            </div>
+                        </div>
+                        <p>Vous utilisez plutôt ce site... (plusieurs réponses possibles)</p>
+                        <div class="Flex_row_form">
+                            <div class="Flex_row_form_row">
+                                <div class="Flex_row_form_checkbox"><input type="checkbox" id="travail" name="info"
+                                        value="travail">
+                                    <label for="travail">pour le travail</label>
+                                    <input type="checkbox" id="quotidien" name="info" value="quotidien">
+                                    <label afor="quotidien">pour le quotidien</label>
+                                </div>
+                                <div class="Flex_row_form_checkbox"><input type="checkbox" id="loisir" name="info"
+                                        value="loisir">
+                                    <label for="loisir">pour
+                                        les loisirs</label><input type="checkbox" id="autre" name="info" value="autre">
+                                    <label for="autre">pour
+                                        quelqu’un d’autre</label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div>
+                        <fieldset role="group">
+                            <legend>Informations sur l'incident</legend>
+
+                            <div class="Flex_row_form">
+                                <div>
+                                    <label for="start">Date de l'incident&nbsp;* :</label>
+                                    <input type="month" id="start" name="start" min="2018-03" value="2018-05" required>
+                                </div>
+                            </div>
+                            <div class="Flex_row_form">
+                                <label for="prenom">Détails de l’incident&nbsp;*</label>
+                                <textarea id="incident" name="incident" required minlength="150" required>
+                        </textarea>
+                            </div>
+                        </fieldset>
+                        <button type="submit">Envoyer le formulaire</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        <section role="contentinfo" class="Flex_row">
+            <div>
+                <h2>Réseaux sociaux</h2>
+                <div>
+                    <i class="fab fa-facebook" role="image" alt="Nous retrouver sur Facebook"></i>
+                    <i class="fab fa-linkedin" role="image" alt="Nous retrouver sur LinkedIn"></i>
+                    <i class="fab fa-twitter" role="image" alt="Nous retrouver sur Twitter"></i>
+                </div>
+            </div>
+            <div>
+                <h2>Normes et réglementations</h2>
+                <ol class="menu_footer">
+                    <li><a href="" aria-labelledby="Lien externe WCAG">WCAG</a></li>
+                    <li><a href="" aria-labelledby="Lien externe RGAA">RGAA</a></li>
+                    <li><a href="" aria-labelledby="Lien externe EN 301 549">EN 301 549</a></li>
+                </ol>
+            </div>
+        </section>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

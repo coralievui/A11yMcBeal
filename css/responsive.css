@@ -1,0 +1,136 @@
+@media screen and (min-device-width : 320px) and (max-device-width : 768px){
+    body, main p, .modal q, .modal p, table{
+        font-size: 3.5vw;
+        white-space:normal;
+    }
+
+    header .Flex_row{
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .Flex_row{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Flex_row_form{
+        flex-direction: column;
+    }
+
+    
+    .Flex_row_form_row{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    
+    .Flex_row_center{
+        flex-direction: column;
+    }
+
+    .Flex_box_T {
+        width: 100%;
+    }
+
+    .Flex_box_T ol, .menu_footer {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .Flex_box_img{
+        width: 80%;
+    }
+
+    .Flex_box_content, .Flex_box_content_inv{
+        width: 80%;
+    }
+
+    .Flex_column_center{
+        width : 100%
+    }
+
+
+    header li {
+        padding: 1.25vw;
+        margin: 0.25vw 2vw;
+        width: 30%;
+        text-align: center;
+    }
+
+    footer li{
+        padding: 0.75vw;
+        background-color: #FFF;
+        margin: 1vw 1vw;
+        width: 25%;
+    }
+
+    nav{
+        order: 3;
+    }
+
+    h1{
+        font-size: 6.5vw;
+    }
+
+    #Logo{
+        order: 2;
+    }
+
+    h2{
+        font-size: 5.5vw;
+    }
+
+    main{
+        margin: 1vw;
+    }
+
+    h3{
+        font-size: 4.5vw;
+    }
+
+    #Recherche{
+        order: 1;
+    }
+
+    button {
+        padding: 1.75vw;
+    }
+
+    .Flex_box_img_modal{
+        width: 100%;
+    }
+
+    .card {
+        width: 60%;
+        margin: 1% 0;
+    }
+
+    .card img{
+        width: 50%;
+    }
+
+    .tableau {
+        width: 100%;
+    }
+
+    #FormIncident{
+        width: 100%;
+    }
+
+    iframe{
+        height: 100%;
+        width: 100%;
+    }
+
+    footer div{
+        width: 100%;
+    }
+
+
+    footer i{
+        font-size: 6.5vw;
+    }
+
+}
